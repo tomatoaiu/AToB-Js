@@ -7,8 +7,8 @@
     "test": "test"
   },
   "scripts": {
-    "test": "nyc mocha --require babel-core/register -R spec ./test/*",
-    "cover": "nyc --reporter=lcov --reporter=text | coveralls"
+    "test": "mocha --require babel-core/register -R spec ./test/*",
+    "coverage": "nyc --reporter=lcov --reporter=text npm run test"
   },
   "repository": {
     "type": "git",

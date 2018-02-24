@@ -4,5 +4,9 @@ node_js:
 env:
   global:
     - secure: "Jx7McA3Lwew/Cc4pBAs0CfINt8NtaNCqhcQ/2N3gpKLxgmU0FrNDvYIMPdGeGYoI5yP2hurL+T/iexQI2N8Or2erw5EEdmhhMNbBKuzfbpD04eiIkAO8+eunMWBfKFFRO7Zu+BlBSHzTyYp1gabjeqsIbkief/lWO3TIVI222XUjKAp3U2o6qXb/unoqw8oWsaDppy6TBvybq8QDfpG46MxpdCGnX1JlFflqroi8ebgIFhSfJJd6gTUIZCWafXMcXZhEl2Xvbxt5fOtH5/sey/AzRgFfHr9evl4+2kFcCOSMOGx0kfTjNDbZXEByS5OyzRt6VHIBR2NsBAEPI2AQ1pFCOrS7CCxjAkWBRoxKanKM5MGGb/0NRGfMLk8jeYzgDfbZ269Ul2CwxFtBmUGlWjtbo4Y/jK5RUEYNbdvneslrG7K70uoXaPWObjRhP9KFnzeu2LdqKshlUqjgVLIzBb0LKJC4PFiipZcZHWHAD83/v4FFrcjtKjQg7vW3qngS0auIaDEaCDzKzorTXHxJVNDXIB3WURZrm5B4/sdmHELLNR9l6Hu07nnGUvk2FHh3rAEOyVoIWslzWQkIg9T6XgoYJaUH1LOpNiQn4iMRPIw0mFD+t9FX8xwV9gXyYsXtmnaVxijCLEgnCknlDmwzZzOdqgHXMBSaBI7QGaa0+h8="
+before_install:
+  - npm install -g coveralls
+script:
+  - npm coverage
 after_success:
-  - npm run coverage
+  - coveralls < ./coverage/lcov.info
