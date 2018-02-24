@@ -3,12 +3,6 @@ node_js:
   - "7"
 env:
   global:
-    - secure: "1iDaJ452DIv70BZiSB6iIWcJG/I2nDceqtTnbPjCnStrDEKtb9Eda1fXkAKoiF9P1508btg2YPtNSEMiyZkQIyvlTxbDpI3KyTXJ0N4r6QEofjCqxQ7Unc1kWJ7Y2LlgrTWN7MWvzroy/ubPe6jGz8OcdhoULCkKS3vnC/Hkb5Bv8aaGh5eTaMz0d3CCxy08J+uNGjaWRsAmhVFXLW4nGIR/QtQdrDEaDu5DEEqf7xUPQcL9xUe2fBsTCtYOAS3kO8ePpOyZhwK1jzJkLIPqZ0KMAvWQFw4RO4Wi+OWQe5jelSVnGlkg1jsjS1ba78+rg6ZaeiLLn61Y9/B0SoIVJF6m8X3+PeDS698hnWofJ96CA03GzuTBObsVBmEPkBh8Oq49TF6yL7j+Pv/zMpoMD/8Nk1ybMH9nKJrb9wZqgURKcbc1NrvqaT0RZ93uR3D4GuI7q0TQhaC5UQ32b7MXGMraM02FN16uOMCXjva5FTpDq/lF/vIA/7f66VUB0IV/aoW1gA7g0l9EvAjPQmCacLGe76IP6KGlmMs4QDOwtH/hWPEa9iOOVlfK915Fapy5e/74LkS4fa70GaV1NOqpdeBKGpSEKQj0PWJOvxeRtL5eOJnlhh8rdx7C6BGamFGxLak+OyEeJjV2VEi9+orL9KfKLVYtmHtdwfAPZoV8Ycg="
-before_script:
-  - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
-  - chmod +x ./cc-test-reporter
-  - ./cc-test-reporter before-build
-script:
-  - npm test
-after_script:
-  - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
+    - secure: "Jx7McA3Lwew/Cc4pBAs0CfINt8NtaNCqhcQ/2N3gpKLxgmU0FrNDvYIMPdGeGYoI5yP2hurL+T/iexQI2N8Or2erw5EEdmhhMNbBKuzfbpD04eiIkAO8+eunMWBfKFFRO7Zu+BlBSHzTyYp1gabjeqsIbkief/lWO3TIVI222XUjKAp3U2o6qXb/unoqw8oWsaDppy6TBvybq8QDfpG46MxpdCGnX1JlFflqroi8ebgIFhSfJJd6gTUIZCWafXMcXZhEl2Xvbxt5fOtH5/sey/AzRgFfHr9evl4+2kFcCOSMOGx0kfTjNDbZXEByS5OyzRt6VHIBR2NsBAEPI2AQ1pFCOrS7CCxjAkWBRoxKanKM5MGGb/0NRGfMLk8jeYzgDfbZ269Ul2CwxFtBmUGlWjtbo4Y/jK5RUEYNbdvneslrG7K70uoXaPWObjRhP9KFnzeu2LdqKshlUqjgVLIzBb0LKJC4PFiipZcZHWHAD83/v4FFrcjtKjQg7vW3qngS0auIaDEaCDzKzorTXHxJVNDXIB3WURZrm5B4/sdmHELLNR9l6Hu07nnGUvk2FHh3rAEOyVoIWslzWQkIg9T6XgoYJaUH1LOpNiQn4iMRPIw0mFD+t9FX8xwV9gXyYsXtmnaVxijCLEgnCknlDmwzZzOdqgHXMBSaBI7QGaa0+h8="
+after_success:
+  - npm run coverage

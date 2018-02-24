@@ -7,7 +7,8 @@
     "test": "test"
   },
   "scripts": {
-    "test": "mocha --compilers js:babel-register --recursive $(find test -name '*.spec.js')"
+    "test": "nyc mocha --require babel-core/register -R spec ./test/*",
+    "cover": "nyc --reporter=lcov --reporter=text | coveralls"
   },
   "repository": {
     "type": "git",
@@ -27,6 +28,8 @@
   "devDependencies": {
     "babel": "^6.23.0",
     "babel-core": "^6.26.0",
-    "babel-preset-es2015": "^6.24.1"
+    "babel-preset-es2015": "^6.24.1",
+    "coveralls": "^3.0.0",
+    "nyc": "^11.4.1"
   }
 }
