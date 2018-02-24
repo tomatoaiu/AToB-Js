@@ -1,3 +1,17 @@
 language: node_js
 node_js:
   - "7"
+env:
+  global:
+    - secure: "1iDaJ452DIv70BZiSB6iIWcJG/I2nDceqtTnbPjCnStrDEKtb9Eda1fXkAKoiF9P1508btg2YPtNSEMiyZkQIyvlTxbDpI3KyTXJ0N4r6QEofjCqxQ7Unc1kWJ7Y2LlgrTWN7MWvzroy/ubPe6jGz8OcdhoULCkKS3vnC/Hkb5Bv8aaGh5eTaMz0d3CCxy08J+uNGjaWRsAmhVFXLW4nGIR/QtQdrDEaDu5DEEqf7xUPQcL9xUe2fBsTCtYOAS3kO8ePpOyZhwK1jzJkLIPqZ0KMAvWQFw4RO4Wi+OWQe5jelSVnGlkg1jsjS1ba78+rg6ZaeiLLn61Y9/B0SoIVJF6m8X3+PeDS698hnWofJ96CA03GzuTBObsVBmEPkBh8Oq49TF6yL7j+Pv/zMpoMD/8Nk1ybMH9nKJrb9wZqgURKcbc1NrvqaT0RZ93uR3D4GuI7q0TQhaC5UQ32b7MXGMraM02FN16uOMCXjva5FTpDq/lF/vIA/7f66VUB0IV/aoW1gA7g0l9EvAjPQmCacLGe76IP6KGlmMs4QDOwtH/hWPEa9iOOVlfK915Fapy5e/74LkS4fa70GaV1NOqpdeBKGpSEKQj0PWJOvxeRtL5eOJnlhh8rdx7C6BGamFGxLak+OyEeJjV2VEi9+orL9KfKLVYtmHtdwfAPZoV8Ycg="
+language: ruby
+rvm:
+  - 2.2.0
+before_script:
+  - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
+  - chmod +x ./cc-test-reporter
+  - ./cc-test-reporter before-build
+script:
+  - bundle exec rspec
+after_script:
+  - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
