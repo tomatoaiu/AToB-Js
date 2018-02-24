@@ -5,6 +5,9 @@
 [![Dependency Status](https://beta.gemnasium.com/badges/github.com/tomatoaiu/AToB-Js.svg)](https://beta.gemnasium.com/projects/github.com/tomatoaiu/AToB-Js)
 [![Coverage Status](https://coveralls.io/repos/github/tomatoaiu/AToB-Js/badge.svg)](https://coveralls.io/github/tomatoaiu/AToB-Js)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/0fafceeb507c46cc9952f29526d58d9a)](https://www.codacy.com/app/tomatoaiu/AToB-Js?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=tomatoaiu/AToB-Js&amp;utm_campaign=Badge_Grade)
+[![license](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/tomatoaiu/AToB-Js/blob/master/LICENSE.md)
+
+
 ## Modules
 
 <dl>
