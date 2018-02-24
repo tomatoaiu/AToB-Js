@@ -1,0 +1,32 @@
+{
+  "name": "AToB-Js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha --compilers js:babel-register --recursive $(find test -name '*.spec.js')"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tomatoaiu/AToB-Js.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tomatoaiu/AToB-Js/issues"
+  },
+  "homepage": "https://github.com/tomatoaiu/AToB-Js#readme",
+  "dependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^5.0.1"
+  },
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-core": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1"
+  }
+}
