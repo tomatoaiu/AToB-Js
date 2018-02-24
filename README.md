@@ -1,7 +1,8 @@
+# AToB-Js
+[![Build Status](https://travis-ci.org/tomatoaiu/AToB-Js.svg?branch=master)](https://travis-ci.org/tomatoaiu/AToB-Js)
 [![Maintainability](https://api.codeclimate.com/v1/badges/76ee7e23868c37310b57/maintainability)](https://codeclimate.com/github/tomatoaiu/AToB-Js/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/76ee7e23868c37310b57/test_coverage)](https://codeclimate.com/github/tomatoaiu/AToB-Js/test_coverage)
 [![Dependency Status](https://beta.gemnasium.com/badges/github.com/tomatoaiu/AToB-Js.svg)](https://beta.gemnasium.com/projects/github.com/tomatoaiu/AToB-Js)
-# AToB-Js
 
 ## Modules
 
