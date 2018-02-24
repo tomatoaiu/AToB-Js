@@ -3,6 +3,7 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/76ee7e23868c37310b57/maintainability)](https://codeclimate.com/github/tomatoaiu/AToB-Js/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/76ee7e23868c37310b57/test_coverage)](https://codeclimate.com/github/tomatoaiu/AToB-Js/test_coverage)
 [![Dependency Status](https://beta.gemnasium.com/badges/github.com/tomatoaiu/AToB-Js.svg)](https://beta.gemnasium.com/projects/github.com/tomatoaiu/AToB-Js)
+[![Coverage Status](https://coveralls.io/repos/github/tomatoaiu/AToB-Js/badge.svg)](https://coveralls.io/github/tomatoaiu/AToB-Js)
 
 ## Modules
 
