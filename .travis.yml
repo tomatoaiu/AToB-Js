@@ -7,6 +7,6 @@ env:
 before_install:
   - npm install -g coveralls
 script:
-  - npm coverage
+  - npm run coverage
 after_success:
   - coveralls < ./coverage/lcov.info
